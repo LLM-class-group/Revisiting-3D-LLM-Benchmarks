@@ -1,1 +1,1 @@
-# Revisiting-3D-LLM-benchmarks
+# Revisiting 3D LLM Benchmarks
