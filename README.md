@@ -19,9 +19,23 @@ We conducted experiments on the above benchmarks. See the commands for reproduci
 
 ### 3D MM-Vet
 
-
 ### ObjaverseXL-LVIS Caption
 
+#### **Generating Results**
+To generate captioning results using the model, run the following command:
+
+
+```bash
+python ./src/object/objaverseXL-LVIS_caption/vlm3d.py
+```
+
+#### **Evaluating Results**
+
+To evaluate the generated captions against ground truth data, run the following command:
+
+```bash
+python ./src/object/objaverseXL-LVIS_caption/evaluate.py
+```
 ### ScanQA
 
 ### SQA3D
