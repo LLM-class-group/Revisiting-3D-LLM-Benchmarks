@@ -158,8 +158,8 @@ if __name__ == "__main__":
     # Example use of VLM3D
     
     if USE_OPENAI:
-        api_key="sk-MDQHjsYg6KjM2Mv63963E76a73004f8f966cEa6aA0015b22"
-        base_url="https://api3.apifans.com/v1"
+        api_key=""
+        base_url=""
     else:
         api_key = "EMPTY"
         base_url="http://localhost:8002/v1"
