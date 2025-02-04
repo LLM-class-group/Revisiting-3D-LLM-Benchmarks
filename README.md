@@ -1,8 +1,10 @@
 ## Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?
 
+> In Submission.
+
 ![](./assets/2d-cheating.png)
 
-Authors: [Jiahe Jin](https://github.com/zizi0123), [Yanheng He](https://github.com/HenryHe0123), [Mingyan Yang](https://github.com/Fircube)
+Authors: [Jiahe Jin](https://github.com/zizi0123)\*, [Yanheng He](https://github.com/HenryHe0123)\*, [Mingyan Yang](https://github.com/Fircube)\*
 
 Source Code: [Revisiting-3D-LLM-Benchmarks](https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks)
 
@@ -31,3 +33,5 @@ Based on our experiments and analysis, we propose four principles for effective 
 ### Credit
 
 SJTU Course AI3604: Computer Vision (2024 Fall) Team G Project.
+
+We would like to express our sincere gratitude to Prof. Yonglu Li for his valuable guidance and support throughout this research, from topic selection to the final writing. His insightful discussions and feedback have been essential to the completion of this work. We would also like to thank Ye Wang for kindly sharing the viewpoint dataset in ScanNet.
