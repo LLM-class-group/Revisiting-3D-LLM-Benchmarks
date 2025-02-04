@@ -3,8 +3,8 @@ import os
 import json
 from tqdm import tqdm
 import shortuuid
-from sqa3d.utils import load, standardize_bbox, color_map
-from sqa3d.render import render
+from utils import load, standardize_bbox, color_map
+from render import render
 from types import SimpleNamespace
 import argparse
 import base64
