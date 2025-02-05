@@ -24,8 +24,10 @@ lemmatizer = WordNetLemmatizer()
 
 sys.path.append(os.path.join(os.getcwd()))
 
-data_path = ""
-input_path = ""
+data_dir = "data/scanqa"
+input_dir = ""  # add path of input file
+input_file = ""  # add inputZ file name
+
 
 def get_lemma(ss):
     return [lemmatizer.lemmatize(token) for token in ss.split()]
@@ -220,7 +222,7 @@ if __name__ == "__main__":
     SPLITS = ["val"]
 
     ds = {
-        split: json.load(open(os.path.join(data_path, f"ScanQA_v1.0_{split}.json")))
+        split: json.load(open(os.path.join(data_dir, f"ScanQA_v1.0_{split}.json")))
         for split in SPLITS
     }
 
@@ -260,7 +262,9 @@ if __name__ == "__main__":
     #
     # val
     #
-    with open(os.path.join(input_path, ""), "r", encoding="utf-8") as file:  # add path of output file
+    with open(
+        os.path.join(input_dir, input_file), "r", encoding="utf-8"
+    ) as file:  # add path of output file
         preds = json.load(file)
     preds = {item["question_id"]: {"answer_top10": item["response"]} for item in preds}
 

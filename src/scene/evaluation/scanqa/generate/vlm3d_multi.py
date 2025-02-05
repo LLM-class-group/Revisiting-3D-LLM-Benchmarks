@@ -11,7 +11,6 @@ OVERWRITE_IMAGE = False  # 重新渲染图片
 CONCURRENT_REQUESTS = 32  # VLM并发请求数
 current_dir = os.path.dirname(os.path.abspath(__file__))
 base64_dir = ""  # for cache
-scanqa_val_dir = ""
 
 
 class VLM3D:
@@ -154,7 +153,7 @@ if __name__ == "__main__":
 
     # 读取JSON文件
     with open(
-        os.path.join(scanqa_val_dir, "ScanQA_v1.0_val.json"),
+        "data/scanqa/ScanQA_v1.0_val.json",
         "r",
         encoding="utf-8",
     ) as file:

@@ -23,15 +23,17 @@ lemmatizer = WordNetLemmatizer()
 sys.path.append(os.path.join(os.getcwd()))
 
 DETAILED_EVAL = False
-data_path = ""
-input_path = ""
+
+data_dir = "data/scanqa"
+input_dir = "" # add path of input file
+output_file = "./output_scores.json"
 
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 
-def file_write(str, file_name=""):
+def file_write(str, file_name=output_file):
     with open(file_name, "a") as file:
         file.write(str + "\n")
 
@@ -414,7 +416,7 @@ if __name__ == "__main__":
     SPLITS = ["val"]
 
     dataset = {
-        split: json.load(open(os.path.join(data_path, f"ScanQA_v1.0_{split}.json")))
+        split: json.load(open(os.path.join(data_dir, f"ScanQA_v1.0_{split}.json")))
         for split in SPLITS
     }
 
@@ -423,7 +425,7 @@ if __name__ == "__main__":
             preds_list = []
             for filename in [".json"]:  # add filenames here
                 with open(
-                    os.path.join(input_path, f"{filename}"), "r", encoding="utf-8"
+                    os.path.join(input_dir, f"{filename}"), "r", encoding="utf-8"
                 ) as file:
                     preds = json.load(file)
                 preds_list.append(
@@ -465,7 +467,7 @@ if __name__ == "__main__":
 
         for mode in selected_modes:
             with open(
-                os.path.join(input_path, f"{mode}_merge.json"),
+                os.path.join(input_dir, f"{mode}_merge.json"),
                 "r",
                 encoding="utf-8",
             ) as file:

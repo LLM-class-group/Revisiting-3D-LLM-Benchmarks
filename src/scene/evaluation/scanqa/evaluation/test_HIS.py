@@ -24,8 +24,9 @@ lemmatizer = WordNetLemmatizer()
 
 sys.path.append(os.path.join(os.getcwd()))
 
-data_path = ""
-input_path = ""
+data_dir = "data/scanqa"
+input_dir = ""  # add path of input file
+file_names = []  # file names of five different views: bev, south, east, north, west
 
 
 def get_lemma(ss):
@@ -232,7 +233,7 @@ if __name__ == "__main__":
     SPLITS = ["val"]
 
     ds = {
-        split: json.load(open(os.path.join(data_path, f"ScanQA_v1.0_{split}.json")))
+        split: json.load(open(os.path.join(data_dir, f"ScanQA_v1.0_{split}.json")))
         for split in SPLITS
     }
 
@@ -240,15 +241,15 @@ if __name__ == "__main__":
     # val
     #
     area = {}
-    with open("../output_areas.txt", "r", encoding="utf-8") as file:
+    with open(
+        "src/scene/evaluation/scanqa/output_areas.txt", "r", encoding="utf-8"
+    ) as file:
         for line in file:
             question_id, area_value = line.strip().split(": ")
             area[question_id] = int(area_value)
 
-    file_names = []  # file names of different views
-
     files = [
-        json.load(open(os.path.join(input_path, fn), "r", encoding="utf-8"))
+        json.load(open(os.path.join(input_dir, fn), "r", encoding="utf-8"))
         for fn in file_names
     ]
 

@@ -9,8 +9,8 @@ OVERWRITE_IMAGE = False  # 重新渲染图片
 CONCURRENT_REQUESTS = 32  # VLM并发请求数
 current_dir = os.path.dirname(os.path.abspath(__file__))
 images_dir = os.path.join(current_dir, "cached_images")
-base64_dir = ""  # for cache
-scanqa_val_dir = ""
+cache_dir = ""  # for cache
+bev_dir = ""
 
 
 class VLM3D:
@@ -62,9 +62,9 @@ class VLM3D:
         获取或创建 base64 编码的图像
         """
         # 确保 base64 缓存目录存在
-        os.makedirs(base64_dir, exist_ok=True)
+        os.makedirs(cache_dir, exist_ok=True)
         base64_file_path = os.path.join(
-            base64_dir, os.path.basename(image_path) + ".txt"
+            cache_dir, os.path.basename(image_path) + ".txt"
         )
 
         # 如果 base64 文件存在，读取并返回
@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     # 读取JSON文件
     with open(
-        os.path.join(scanqa_val_dir, "ScanQA_v1.0_val.json"), X, "r", encoding="utf-8"
+        "data/scanqa/ScanQA_v1.0_val.json", "r", encoding="utf-8"
     ) as file:
         data = json.load(file)
 
@@ -118,9 +118,8 @@ if __name__ == "__main__":
         prompts.append(question)
         question_ids.append(question_id)
 
-        bev_path = ""
         image_files.append(
-            os.path.join(bev_path, f"{scene_id}_bird.png")
+            os.path.join(bev_dir, f"{scene_id}_bird.png")
         )  # append the file path of bev image
 
     responses, questions = vlm3d.batch_response(
