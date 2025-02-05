@@ -1,7 +1,3 @@
-Here’s the complete `README.md` for your repository based on the provided content and structure:
-
----
-
 # Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?
 
 <p align="center"><img width="540" src="docs/2d cheating.png"></p>
@@ -52,3 +48,5 @@ If you find this work useful, please cite our paper:
   year={2025}
 }
 ```
+## Acknowledgement
+We would like to express our sincere gratitude to Prof. Yonglu Li for his valuable guidance and support throughout this research, from topic selection to the final writing. His insightful discussions and feedback have been essential to the completion of this work. We would also like to thank Ye Wang for kindly sharing the viewpoint dataset in ScanNet.
