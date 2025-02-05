@@ -16,14 +16,12 @@ We conducted experiments on the above benchmarks. See the commands for reproduci
 ### 3D MM-Vet
 
 #### **Generating Results**
-To generate results using the model, run the following command:
 
 ```bash
 python ./src/object/3dmmvet/inference.py
 ```
 
 #### **Evaluating Results**
-To evaluate the generated results, run the following command:
 
 ```bash
 python ./src/object/3dmmvet/eval.py
@@ -32,8 +30,6 @@ python ./src/object/3dmmvet/eval.py
 ### ObjaverseXL-LVIS Caption
 
 #### **Generating Results**
-To generate captioning results using the model, run the following command:
-
 
 ```bash
 python ./src/object/objaverseXL-LVIS_caption/vlm3d.py
@@ -41,76 +37,78 @@ python ./src/object/objaverseXL-LVIS_caption/vlm3d.py
 
 #### **Evaluating Results**
 
-To evaluate the generated captions against ground truth data, run the following command:
-
 ```bash
 python ./src/object/objaverseXL-LVIS_caption/evaluate.py
 ```
-### ScanQA
 
-#### **Rendering scene point cloud**
+### **Rendering Scene Point Cloud**
 
-##### Render bev images
+##### Render BEV Images
 ```bash
 python ./src/scene/render/parallel_render_bev.py
 ```
 
-##### Render multi view images
+##### Render Multi View Images
 ```bash
 python ./src/scene/render/parallel_render_multi.py
 ```
 
-#### **Generating Results**
-To generate results using the model, run the following command:
+### ScanQA
 
-##### Generate bev results
+
+#### **Generating Results**
+
+##### Generate BEV Results
+
 ```bash
 python ./src/scene/evaluation/scanqa/generate/vlm3d.py
 ```
 
-##### Generate multi view results
+##### Generate Multi View Results
+
 ```bash
 bash ./src/scene/evaluation/scanqa/generate/generate.sh
 ```
 
 #### **Evaluating Results**
 
-To evaluate the generated captions against ground truth data, run the following command:
-
-##### Evaluate single view results
+##### Evaluate Single View Results
 ```bash
 python ./src/scene/evaluation/scanqa/evaluation/test.py
 ```
 
-##### Evaluate HIS results of 5 views
+##### Evaluate HIS Results 
 ```bash
 python ./src/scene/evaluation/scanqa/evaluation/test_HIS.py
 ```
 
-##### Evaluate BoN results
+##### Evaluate BoN Results
 ```bash
 python ./src/scene/evaluation/scanqa/evaluation/test_BoN.py
 ```
 
 ### SQA3D
 
-To test the model’s performance on SQA3D, run the following command:
+To test VLM’s performance on SQA3D, run the following command:
 
 ```bash
 python ./src/scene/evaluation/sqa3d/test_sqa_vlm.py
 ```
 
+## Acknowledgement
+We would like to express our sincere gratitude to Prof. Yonglu Li for his valuable guidance and support throughout this research, from topic selection to the final writing. His insightful discussions and feedback have been essential to the completion of this work. We would also like to thank Ye Wang for kindly sharing the viewpoint dataset in ScanNet.
+
 ## Citation
 If you find this work useful, please cite our paper:
 
 ```
-@article{jin2025revisiting,
-  title={Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?},
-  author={Jin, Jiahe and He, Yanheng and Yang, Mingyan},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+@misc{revisit3dllmbenchmark,
+  author       = {Jiahe Jin and Yanheng He and Mingyan Yang},
+  title        = {Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?},
+  year         = {2025},
+  organization = {GitHub},
+  url          = {https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks},
 }
 ```
 
-## Acknowledgement
-We would like to express our sincere gratitude to Prof. Yonglu Li for his valuable guidance and support throughout this research, from topic selection to the final writing. His insightful discussions and feedback have been essential to the completion of this work. We would also like to thank Ye Wang for kindly sharing the viewpoint dataset in ScanNet.
+
