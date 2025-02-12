@@ -1,6 +1,6 @@
 # Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?
 
-<p align="center"><img width="540" src="docs/2d cheating.png"></p>
+<p align="center"><img width="540" src="assets/2d cheating.png"></p>
 
 This is the official repository of our paper “**Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?**” by [Jiahe Jin](https://github.com/zizi0123), [Yanheng He](https://github.com/henryhe0123), and [Mingyan Yang](https://github.com/fircube).
 
@@ -9,7 +9,7 @@ In this work, we identify the "2D-Cheating" problem in 3D LLM evaluation, where 
 
 ## Usage
 
-<p align="center"><img width="540" src="docs/benchmark overview.png"></p>
+<p align="center"><img width="540" src="assets/benchmark overview.png"></p>
 
 We conducted experiments on the above benchmarks. See the commands for reproducing each experiment as follows:
 
