@@ -98,6 +98,11 @@ python ./src/scene/evaluation/sqa3d/test_sqa_vlm.py
 ## Acknowledgement
 We would like to express our sincere gratitude to Prof. Yonglu Li for his valuable guidance and support throughout this research, from topic selection to the final writing. His insightful discussions and feedback have been essential to the completion of this work. We would also like to thank Ye Wang for kindly sharing the viewpoint dataset in ScanNet.
 
+## Data Attribution
+This project uses data from:
+- [GPT4Point](https://github.com/Pointcept/GPT4Point) (MIT License)
+- [ShapeLLM](https://github.com/qizekun/ShapeLLM) (Apache 2.0 License)
+
 ## Citation
 If you find this work useful, please cite our paper:
 
