@@ -24,7 +24,7 @@ We propose **VLM3D**, a simple yet general pipeline that adapts VLMs to 3D tasks
 
 ![](./assets/benchmarks.jpg)
 
-We conducted experiments on the above benchmarks, which cover major benchmarks commonly used for evaluating 3D LLMs, including those proposed by the model creators and those widely adopted across 3D LLM evaluations. 
+We conducted experiments on the above benchmarks, which cover major benchmarks commonly used for evaluating 3D LLMs. 
 
 ### Principles
 
