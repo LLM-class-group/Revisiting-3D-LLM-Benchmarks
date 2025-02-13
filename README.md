@@ -6,7 +6,9 @@
 
 Authors: [Jiahe Jin](https://github.com/zizi0123)\*, [Yanheng He](https://github.com/HenryHe0123)\*, [Mingyan Yang](https://github.com/Fircube)\*
 
-Source Code: [Revisiting-3D-LLM-Benchmarks](https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks)
+- [Source Code](https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks)
+
+- [Preprint](https://arxiv.org/abs/2502.08503)
 
 ### Abstract
 
