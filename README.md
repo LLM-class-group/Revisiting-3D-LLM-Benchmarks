@@ -1,4 +1,4 @@
-## Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?
+> In Submission.
 
 <p align="center">
     <img src="./assets/2d-cheating.png" width="80%">
