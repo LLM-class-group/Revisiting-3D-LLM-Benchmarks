@@ -1,5 +1,10 @@
 # Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?
 
+<p align="center">
+  📄 <a href="https://arxiv.org/abs/2502.08503" target="_blank">Paper</a> &nbsp; | &nbsp;
+  🌐 <a href="https://llm-class-group.github.io/Revisiting-3D-LLM-Benchmarks/" target="_blank">Website</a> &nbsp;
+</p>
+
 <p align="center"><img width="540" src="assets/2d cheating.png"></p>
 
 This is the official repository of our paper “**Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?**” by [Jiahe Jin](https://github.com/zizi0123), [Yanheng He](https://github.com/henryhe0123), and [Mingyan Yang](https://github.com/fircube).
@@ -107,12 +112,12 @@ This project uses data from:
 If you find this work useful, please cite our paper:
 
 ```
-@misc{revisit3dllmbenchmark,
+@article{revisit3dllmbenchmark,
   author       = {Jiahe Jin and Yanheng He and Mingyan Yang},
   title        = {Revisiting 3D LLM Benchmarks: Are We Really Testing 3D Capabilities?},
   year         = {2025},
-  organization = {GitHub},
-  url          = {https://github.com/LLM-class-group/Revisiting-3D-LLM-Benchmarks},
+  journal      = {arXiv preprint arXiv:2502.08503},
+  url          = {https://arxiv.org/abs/2502.08503}
 }
 ```
 
