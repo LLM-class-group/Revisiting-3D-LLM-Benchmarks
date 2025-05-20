@@ -1,4 +1,4 @@
-> In Submission.
+> Accepted to ACL 2025 Findings.
 
 <p align="center">
     <img src="./assets/2d-cheating.png" width="80%">
